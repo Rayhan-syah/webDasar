@@ -44,10 +44,12 @@ nav li {
     margin-right: 20px;
 }
 
-nav a:hover{
-    font-weight: bold;
-    color: white;
-}
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+ }
 
 .jumbotron{
     font-size: 20px;
@@ -93,6 +95,10 @@ aside{
     object-fit: cover;
     object-position: center;
 }
+
+header {
+    display: inline;
+ }
 
 h2{
     color: #00a2c6;
