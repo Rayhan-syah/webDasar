@@ -3,22 +3,6 @@
     box-sizing: border-box;
  }
 
- /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
-@media screen and (max-width: 992px) {
-
-}
-    /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
-@media screen and (max-width: 600px) {
-
-}
-
-@media screen and (max-width: 500px) {
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
-    }
- }
 
 body{
     font-family: 'Quicksand', sans-serif;
@@ -26,10 +10,13 @@ body{
     margin: 0px;
 }
 
-nav{
+nav {
     background-color: #00a2c6;
     padding: 5px;
-}
+    position: sticky;
+    top: 0;
+    border-radius: 0px 0px 5px 5px;
+ }
 
 nav a{
     font-size: 18px;
@@ -43,13 +30,6 @@ nav li {
     list-style-type: none;
     margin-right: 20px;
 }
-
-nav {
-    background-color: #00a2c6;
-    padding: 5px;
-    position: sticky;
-    top: 0;
- }
 
 .jumbotron{
     font-size: 20px;
@@ -66,12 +46,12 @@ main{
 
 #content{
     float: left;
-    width: 75%;
+    width: 74%;
 }
 
 aside{
     float: right;
-    width: 25%;
+    width: 24%;
     padding-left: 20px;
 }
 
@@ -87,6 +67,8 @@ aside{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 darkgray;
     padding: 20px;
+    margin: 2px;
+    margin-top: 30px;
 }
 
 .featured-image{
@@ -116,3 +98,17 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
